@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .entrada {
+            width: 40rem;
+            margin: 2rem auto;
+        }
+
+        input {
+            padding: .3rem;
+            text-align: right;
+        }
+
+        button {
+            padding: .45rem 1rem;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        .resposta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 40rem;
+            min-height: 25rem;
+            margin: 2rem auto;
+            border: 1px solid #a3a0a0;
+            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+        }
+
+        .item {
+            text-align: center;
+            background-color: #b434d1;
+            color: #f7d80c;
+            font-weight: bold;
+            width: 11rem;
+            height: 5rem;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #a3a0a0;
+            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="entrada">
+        Número: <input type="number" id="numero">
+        <button onclick="processar()">OK</button>
+    </div>
+
+    <div id="resp" class="resposta">
+        <script>
+            /*
+              Função.
+              Estrutura de repetição: while.
+              Entrada/saída de dados.
+              Variável.
+            */
+
+            function processar() {
+                var i = 1, num = parseInt(document.getElementById("numero").value);
+
+                while (i <= num) {
+                    document.getElementById("resp").innerHTML += `<div class="item">${i}</div>`;
+                    i++;
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
