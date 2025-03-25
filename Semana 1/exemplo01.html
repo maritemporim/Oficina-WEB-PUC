@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            width: 40rem;
+            margin: 1rem auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40rem;
+            height: 25rem;
+            margin: 2rem auto;
+            border: 1px solid #a3a0a0;
+            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+        }
+
+        .produto {
+            text-align: center;
+            background-color: #b434d1;
+            color: #f7d80c;
+            font-weight: bold;
+            width: 11rem;
+            height: 5rem;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #a3a0a0;
+            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+        }
+
+        .preco {
+            text-align: center;
+            background-color: #f7d80c;
+            color: #b434d1;
+            font-weight: bold;
+            width: 11rem;
+            height: 5rem;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #a3a0a0;
+            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tabela de Preços</h1>
+    <div class="container">
+        <script>
+
+            /*
+               Estrutura condicional (seleção): switch-case.
+               Variável
+               Entrada/saída de dados.
+            */
+            
+            var produto = prompt("Informe o produto");
+
+            switch (produto.toLowerCase()) {
+                case "arroz":
+                    document.write("<div class='produto'>Você escolheu arroz.</div>");
+                    document.write("<div class='preco'>Valor: R$ 8,99</div>");
+                    break;
+                case "feijao":
+                    document.write("<div class='aviso'>A palavra 'feijão' tem ~.</div>");
+                case "feijão":
+                    document.write("<div class='produto'>Você escolheu feijão.</div>");
+                    document.write("<div class='preco'>Valor: R$ 6,79</div>");
+                    break;
+                case "cafe":
+                    document.write("<div class='aviso'>A palavra 'café' tem ´.</div>");
+                //break;
+                case "café":
+                    document.write("<div class='produto'>Você escolheu café.</div>");
+                    document.write("<div class='preco'>Valor: R$ 18,95</div>");
+                    break;
+                default:
+                    document.write("<div class='erro'>Produto não identificado!</div>");
+            }
+        </script>
+    </div>
+</body>
+
+</html>
