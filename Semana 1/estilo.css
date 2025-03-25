@@ -1,0 +1,30 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+div {
+    border: 0.1rem solid gray;
+    width: 15rem;
+    height: 30rem;
+    margin: 1rem auto;
+    padding: 0.9rem;
+    box-shadow: 0.8rem 0.3rem 0.9rem 0.3rem gray;
+}
+
+img {
+    width: 14.9rem;
+}
+
+p {
+   width: 14.9rem; 
+   height: 11rem; 
+   border-radius: 10%;           
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+}
