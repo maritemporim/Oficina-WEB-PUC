@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+</head>
+
+<body>
+    <script>
+        /* Estrutura sequencial:
+           Comandos de saída.
+           Declaração de variável.
+           Comando de entrada.
+           Template String.
+        */
+        let num1, num2, soma;
+        num1 = prompt("Informe o primeiro número:");
+        num2 = prompt("Informe o segundo número:");
+        soma = parseFloat(num1) + parseFloat(num2);
+
+        alert(num1 + " + " + num2 + " = " + soma);
+        alert(`${num1} + ${num2} = ${soma}`);
+
+        document.write(`${num1} + ${num2} = ${soma}`);
+        console.log(`${num1} + ${num2} = ${soma}`);
+    </script>
+</body>
+
+</html>
