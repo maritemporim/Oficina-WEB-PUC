@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,8 +15,9 @@
             } while (confirm("Deseja informar outro nome?"));
 
             resp.innerHTML = "Nomes informados: <br />"
-            for (i = 0; i < vetor.length; i++)
-                resp.innerHTML += `${i} - ${vetor[i]} <br />`;
+            vetor.forEach(function (nome, i) {
+                resp.innerHTML += `${i} - ${nome} <br />`;
+            });     
         }
     </script>
 </head>
